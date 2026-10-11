@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu — Mez'a</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="page-loader"><div class="loader-ring"></div></div>
+<div class="sidebar-overlay"></div>
+
+<div class="app">
+  <aside class="sidebar">
+    <button class="sidebar-collapse-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <div class="sidebar-head">
+      <div class="sidebar-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+      <div class="sidebar-brand">Mez'a<small>Restaurant OS</small></div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Floor</div>
+      <a href="Orders.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span class="label">Kitchen Orders</span><span class="badge-count">9</span></a>
+      <a href="Tables.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg><span class="label">Tables</span></a>
+      <div class="sidebar-section-label">Manage</div>
+      <a href="Menu.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span class="label">Menu</span></a>
+      <a href="Reports.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span class="label">Reports</span></a>
+    </nav>
+    <div class="sidebar-foot"><div class="sidebar-user"><img src="https://i.pravatar.cc/100?img=60" alt=""><div><strong>Karim Fouad</strong><span>Restaurant Manager</span></div></div></div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="mobile-menu-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+        <div class="topbar-title"><h1>Menu</h1><span>68 items across 7 categories</span></div>
+      </div>
+      <div class="topbar-right">
+        <button class="btn btn-primary btn-sm" data-open-drawer="#add-item-drawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg> Add Menu Item</button>
+      </div>
+    </header>
+
+    <div class="page">
+      <div class="table-toolbar" data-reveal>
+        <div class="filter-row">
+          <button class="filter-chip active" data-toggle>All</button>
+          <button class="filter-chip" data-toggle>Mains</button>
+          <button class="filter-chip" data-toggle>Grills</button>
+          <button class="filter-chip" data-toggle>Starters</button>
+          <button class="filter-chip" data-toggle>Drinks</button>
+          <button class="filter-chip" data-toggle>Desserts</button>
+        </div>
+      </div>
+
+      <div class="grid-3col" data-reveal>
+        <div class="panel">
+          <div style="aspect-ratio:16/10;border-radius:14px;background:linear-gradient(135deg,rgba(194,65,12,0.14),rgba(22,101,52,0.12));display:flex;align-items:center;justify-content:center;color:var(--primary);margin-bottom:14px;"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2s6 6.5 6 11a6 6 0 1 1-12 0c0-4.5 6-11 6-11z"/></svg></div>
+          <div class="flex-between" style="margin-bottom:6px;"><strong style="font-size:15px;">Grilled Sea Bass</strong><span class="badge success">Available</span></div>
+          <p style="font-size:12.5px;margin-bottom:12px;">Fresh sea bass, lemon herb butter, seasonal vegetables</p>
+          <div class="flex-between"><span style="font-family:var(--font-display);font-weight:800;font-size:16px;color:var(--primary);">EGP 285</span><button class="btn btn-outline btn-sm">Edit</button></div>
+        </div>
+        <div class="panel">
+          <div style="aspect-ratio:16/10;border-radius:14px;background:linear-gradient(135deg,rgba(194,65,12,0.14),rgba(22,101,52,0.12));display:flex;align-items:center;justify-content:center;color:var(--primary);margin-bottom:14px;"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg></div>
+          <div class="flex-between" style="margin-bottom:6px;"><strong style="font-size:15px;">Mixed Grill Platter</strong><span class="badge success">Available</span></div>
+          <p style="font-size:12.5px;margin-bottom:12px;">Kofta, shish tawook, lamb chops, grilled vegetables</p>
+          <div class="flex-between"><span style="font-family:var(--font-display);font-weight:800;font-size:16px;color:var(--primary);">EGP 420</span><button class="btn btn-outline btn-sm">Edit</button></div>
+        </div>
+        <div class="panel">
+          <div style="aspect-ratio:16/10;border-radius:14px;background:linear-gradient(135deg,rgba(194,65,12,0.14),rgba(22,101,52,0.12));display:flex;align-items:center;justify-content:center;color:var(--primary);margin-bottom:14px;"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></div>
+          <div class="flex-between" style="margin-bottom:6px;"><strong style="font-size:15px;">Molokhia w/ Rabbit</strong><span class="badge success">Available</span></div>
+          <p style="font-size:12.5px;margin-bottom:12px;">Traditional Egyptian molokhia, slow-cooked rabbit, rice</p>
+          <div class="flex-between"><span style="font-family:var(--font-display);font-weight:800;font-size:16px;color:var(--primary);">EGP 260</span><button class="btn btn-outline btn-sm">Edit</button></div>
+        </div>
+        <div class="panel">
+          <div style="aspect-ratio:16/10;border-radius:14px;background:linear-gradient(135deg,rgba(194,65,12,0.14),rgba(22,101,52,0.12));display:flex;align-items:center;justify-content:center;color:var(--primary);margin-bottom:14px;"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h8M12 8v8"/></svg></div>
+          <div class="flex-between" style="margin-bottom:6px;"><strong style="font-size:15px;">Koshari Large</strong><span class="badge success">Available</span></div>
+          <p style="font-size:12.5px;margin-bottom:12px;">Rice, lentils, macaroni, crispy onions, tomato sauce</p>
+          <div class="flex-between"><span style="font-family:var(--font-display);font-weight:800;font-size:16px;color:var(--primary);">EGP 95</span><button class="btn btn-outline btn-sm">Edit</button></div>
+        </div>
+        <div class="panel">
+          <div style="aspect-ratio:16/10;border-radius:14px;background:linear-gradient(135deg,rgba(194,65,12,0.14),rgba(22,101,52,0.12));display:flex;align-items:center;justify-content:center;color:var(--primary);margin-bottom:14px;"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 21h8M12 17v4M6 3h12v6a6 6 0 0 1-12 0V3z"/></svg></div>
+          <div class="flex-between" style="margin-bottom:6px;"><strong style="font-size:15px;">Hibiscus Juice</strong><span class="badge warning">Low Stock</span></div>
+          <p style="font-size:12.5px;margin-bottom:12px;">Fresh brewed karkade, served chilled</p>
+          <div class="flex-between"><span style="font-family:var(--font-display);font-weight:800;font-size:16px;color:var(--primary);">EGP 45</span><button class="btn btn-outline btn-sm">Edit</button></div>
+        </div>
+        <div class="panel">
+          <div style="aspect-ratio:16/10;border-radius:14px;background:linear-gradient(135deg,rgba(194,65,12,0.14),rgba(22,101,52,0.12));display:flex;align-items:center;justify-content:center;color:var(--primary);margin-bottom:14px;"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <div class="flex-between" style="margin-bottom:6px;"><strong style="font-size:15px;">Feteer Meshaltet</strong><span class="badge danger">86'd Today</span></div>
+          <p style="font-size:12.5px;margin-bottom:12px;">Traditional layered pastry with honey and cream</p>
+          <div class="flex-between"><span style="font-family:var(--font-display);font-weight:800;font-size:16px;color:var(--primary);">EGP 130</span><button class="btn btn-outline btn-sm">Edit</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="overlay"></div>
+<div class="drawer" id="add-item-drawer">
+  <div class="drawer-head"><h3>Add Menu Item</h3><button class="modal-close" data-close-drawer><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+  <form class="drawer-body" data-fake-submit>
+    <div class="field"><label>Item Name</label><input placeholder="e.g. Grilled Sea Bass" required></div>
+    <div class="field"><label>Description</label><textarea placeholder="Short appetizing description..."></textarea></div>
+    <div class="form-grid"><div class="field"><label>Category</label><select><option>Mains</option><option>Grills</option><option>Starters</option><option>Drinks</option><option>Desserts</option></select></div><div class="field"><label>Price (EGP)</label><input type="number" placeholder="285"></div></div>
+    <div class="toggle-row"><div><strong>Available Now</strong></div><label class="switch"><input type="checkbox" checked><span class="slider"></span></label></div>
+    <button type="submit" class="btn btn-primary" style="width:100%;margin-top:10px;">Add Item</button>
+  </form>
+</div>
+
+<div class="toast-stack"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

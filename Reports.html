@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reports — Mez'a</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="page-loader"><div class="loader-ring"></div></div>
+<div class="sidebar-overlay"></div>
+
+<div class="app">
+  <aside class="sidebar">
+    <button class="sidebar-collapse-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <div class="sidebar-head">
+      <div class="sidebar-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+      <div class="sidebar-brand">Mez'a<small>Restaurant OS</small></div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Floor</div>
+      <a href="Orders.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><span class="label">Kitchen Orders</span><span class="badge-count">9</span></a>
+      <a href="Tables.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg><span class="label">Tables</span></a>
+      <div class="sidebar-section-label">Manage</div>
+      <a href="Menu.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg><span class="label">Menu</span></a>
+      <a href="Reports.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span class="label">Reports</span></a>
+    </nav>
+    <div class="sidebar-foot"><div class="sidebar-user"><img src="https://i.pravatar.cc/100?img=60" alt=""><div><strong>Karim Fouad</strong><span>Restaurant Manager</span></div></div></div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="mobile-menu-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+        <div class="topbar-title"><h1>Reports</h1><span>Mez'a Zamalek · Performance</span></div>
+      </div>
+      <div class="topbar-right">
+        <button class="filter-chip" data-toggle>Last 30 Days <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <button class="btn btn-outline btn-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Export</button>
+      </div>
+    </header>
+
+    <div class="page">
+      <div class="kpi-grid" data-reveal>
+        <div class="kpi-card"><div class="kpi-top"><div class="kpi-icon" style="background:rgba(194,65,12,0.1);color:var(--primary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div class="kpi-trend up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg> 15.2%</div></div><div class="kpi-value" data-prefix="EGP " data-count="612400">EGP 0</div><div class="kpi-label">Monthly Revenue</div></div>
+        <div class="kpi-card"><div class="kpi-top"><div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/></svg></div><div class="kpi-trend up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg> 6.4%</div></div><div class="kpi-value" data-count="2840">0</div><div class="kpi-label">Orders Served</div></div>
+        <div class="kpi-card"><div class="kpi-top"><div class="kpi-icon" style="background:rgba(147,51,234,0.1);color:var(--violet);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div class="kpi-trend down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg> 3.1%</div></div><div class="kpi-value" data-count="16" data-suffix=" min">0 min</div><div class="kpi-label">Avg. Table Turnover</div></div>
+        <div class="kpi-card"><div class="kpi-top"><div class="kpi-icon" style="background:var(--warning-bg);color:var(--warning);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div></div><div class="kpi-value" data-count="4" data-suffix=".8">0.8</div><div class="kpi-label">Avg. Rating</div></div>
+      </div>
+
+      <div class="grid-2col" style="margin-bottom:20px;">
+        <div class="panel" data-reveal>
+          <div class="panel-head"><div><h3>Revenue by Channel</h3><p>Dine-in vs. delivery apps</p></div></div>
+          <div class="bar-chart">
+            <div class="col"><div class="stack" style="height:70%;"><div class="seg" style="height:100%;background:#C2410C;"></div></div><span>Dine-in</span></div>
+            <div class="col"><div class="stack" style="height:58%;"><div class="seg" style="height:100%;background:#166534;"></div></div><span>Talabat</span></div>
+            <div class="col"><div class="stack" style="height:44%;"><div class="seg" style="height:100%;background:#EA580C;"></div></div><span>Uber Eats</span></div>
+            <div class="col"><div class="stack" style="height:30%;"><div class="seg" style="height:100%;background:#9333EA;"></div></div><span>InDrive</span></div>
+            <div class="col"><div class="stack" style="height:22%;"><div class="seg" style="height:100%;background:#DB2777;"></div></div><span>Takeaway</span></div>
+          </div>
+        </div>
+        <div class="panel" data-reveal data-reveal-delay="1">
+          <div class="panel-head"><div><h3>Menu Category Mix</h3></div></div>
+          <div class="donut-wrap" style="justify-content:center;">
+            <svg viewBox="0 0 42 42" width="140" height="140">
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#F5ECDF" stroke-width="5"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#C2410C" stroke-width="5" stroke-dasharray="34 66" stroke-dashoffset="25" stroke-linecap="round"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#166534" stroke-width="5" stroke-dasharray="26 74" stroke-dashoffset="-9" stroke-linecap="round"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#EA580C" stroke-width="5" stroke-dasharray="22 78" stroke-dashoffset="-35" stroke-linecap="round"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#9333EA" stroke-width="5" stroke-dasharray="18 82" stroke-dashoffset="-57" stroke-linecap="round"></circle>
+            </svg>
+          </div>
+          <ul class="donut-legend" style="margin-top:16px;">
+            <li><i style="background:#C2410C;"></i> Grills <b>34%</b></li>
+            <li><i style="background:#166534;"></i> Mains <b>26%</b></li>
+            <li><i style="background:#EA580C;"></i> Starters <b>22%</b></li>
+            <li><i style="background:#9333EA;"></i> Drinks &amp; Desserts <b>18%</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel" data-reveal>
+        <div class="panel-head"><div><h3>Best Selling Dishes</h3><p>This month</p></div></div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Dish</th><th>Orders</th><th>Revenue</th><th>Rating</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Mixed Grill Platter</strong></td><td>612</td><td>EGP 257,040</td><td>⭐ 4.9</td></tr>
+              <tr><td><strong>Grilled Sea Bass</strong></td><td>488</td><td>EGP 139,080</td><td>⭐ 4.8</td></tr>
+              <tr><td><strong>Koshari Large</strong></td><td>940</td><td>EGP 89,300</td><td>⭐ 4.7</td></tr>
+              <tr><td><strong>Molokhia w/ Rabbit</strong></td><td>301</td><td>EGP 78,260</td><td>⭐ 4.9</td></tr>
+              <tr><td><strong>Feteer Meshaltet</strong></td><td>276</td><td>EGP 35,880</td><td>⭐ 4.6</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-stack"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

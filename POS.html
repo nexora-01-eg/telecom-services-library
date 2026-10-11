@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register — Rizq POS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="page-loader"><div class="loader-ring"></div></div>
+<div class="sidebar-overlay"></div>
+
+<div class="app">
+  <aside class="sidebar">
+    <button class="sidebar-collapse-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <div class="sidebar-head">
+      <div class="sidebar-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg></div>
+      <div class="sidebar-brand">Rizq<small>Smart POS</small></div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Sell</div>
+      <a href="POS.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="label">Register</span></a>
+
+      <div class="sidebar-section-label">Manage</div>
+      <a href="Inventory.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8V21H3V8"/><path d="M1 3h22v5H1z"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span class="label">Inventory</span><span class="badge-count">312</span></a>
+      <a href="Sales.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span class="label">Sales Reports</span></a>
+
+      <div class="sidebar-section-label">System</div>
+      <a href="Settings.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><span class="label">Settings</span></a>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="sidebar-user">
+        <img src="https://i.pravatar.cc/100?img=51" alt="Owner">
+        <div><strong>Mahmoud Adel</strong><span>Store Owner</span></div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="mobile-menu-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+        <div class="topbar-title"><h1>New Sale</h1><span>Al-Rehab Pharmacy · Register 01</span></div>
+      </div>
+      <div class="topbar-right">
+        <div class="search-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><input type="text" placeholder="Scan barcode or search product..."><kbd>⌘K</kbd></div>
+        <button class="icon-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="dot-alert"></span></button>
+        <div class="topbar-divider"></div>
+        <div class="dropdown">
+          <button class="topbar-profile dropdown-trigger">
+            <img src="https://i.pravatar.cc/100?img=51" alt="Profile">
+            <div><strong>Mahmoud Adel</strong><span>Owner</span></div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="dropdown-menu">
+            <a href="Settings.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 21v-1a6 6 0 0 1 12 0v1"/></svg> My Profile</a>
+            <hr>
+            <button type="button" data-toast="Signed out (demo only)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg> Sign out</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page">
+      <div class="pos-shell" data-reveal>
+        <div>
+          <div class="pos-cats">
+            <button class="active">All Items</button>
+            <button>Medicines</button>
+            <button>Skincare</button>
+            <button>Baby Care</button>
+            <button>Vitamins</button>
+            <button>Personal Care</button>
+          </div>
+          <div class="pos-grid">
+            <button class="pos-item"><div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="6" y="2" width="12" height="20" rx="3"/><line x1="6" y1="9" x2="18" y2="9"/></svg></div><strong>Panadol Extra 24s</strong><span class="stock">86 in stock</span><div class="price">EGP 32</div></button>
+            <button class="pos-item"><div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M2 12h20"/></svg></div><strong>Augmentin 1g</strong><span class="stock">42 in stock</span><div class="price">EGP 118</div></button>
+            <button class="pos-item"><div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><strong>Vitamin C 1000mg</strong><span class="stock">120 in stock</span><div class="price">EGP 95</div></button>
+            <button class="pos-item"><div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 4.5-4 8-8 11z"/></svg></div><strong>Nivea Body Lotion</strong><span class="stock">54 in stock</span><div class="price">EGP 145</div></button>
+            <button class="pos-item"><div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg></div><strong>Pampers Newborn</strong><span class="stock">19 in stock</span><div class="price">EGP 210</div></button>
+            <button class="pos-item"><div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></div><strong>Blood Pressure Monitor</strong><span class="stock">7 in stock</span><div class="price">EGP 890</div></button>
+            <button class="pos-item"><div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12h8M12 8v8"/></svg></div><strong>First Aid Kit</strong><span class="stock">33 in stock</span><div class="price">EGP 175</div></button>
+            <button class="pos-item"><div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2s6 6.5 6 11a6 6 0 1 1-12 0c0-4.5 6-11 6-11z"/></svg></div><strong>Cetaphil Cleanser</strong><span class="stock">28 in stock</span><div class="price">EGP 320</div></button>
+            <button class="pos-item"><div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg></div><strong>Omega-3 Capsules</strong><span class="stock">61 in stock</span><div class="price">EGP 260</div></button>
+          </div>
+        </div>
+
+        <div class="cart-panel">
+          <div class="panel-head"><div><h3>Current Order</h3><p>Ticket #00248</p></div><span class="badge info">3 items</span></div>
+          <div class="cart-line">
+            <div style="flex:1;"><strong>Panadol Extra 24s</strong><span>EGP 32 × 2</span></div>
+            <div class="qty-control"><button>–</button><span style="font-size:13px;font-weight:700;">2</span><button>+</button></div>
+          </div>
+          <div class="cart-line">
+            <div style="flex:1;"><strong>Vitamin C 1000mg</strong><span>EGP 95 × 1</span></div>
+            <div class="qty-control"><button>–</button><span style="font-size:13px;font-weight:700;">1</span><button>+</button></div>
+          </div>
+          <div class="cart-line">
+            <div style="flex:1;"><strong>Nivea Body Lotion</strong><span>EGP 145 × 1</span></div>
+            <div class="qty-control"><button>–</button><span style="font-size:13px;font-weight:700;">1</span><button>+</button></div>
+          </div>
+
+          <div style="margin-top:14px;">
+            <div class="cart-summary-row"><span>Subtotal</span><span>EGP 304.00</span></div>
+            <div class="cart-summary-row"><span>Discount (5%)</span><span>– EGP 15.20</span></div>
+            <div class="cart-summary-row total"><span>Total Due</span><span>EGP 288.80</span></div>
+          </div>
+
+          <div class="field" style="margin-top:16px;">
+            <label>Payment Method</label>
+            <div style="display:flex;gap:8px;">
+              <button class="filter-chip active" data-toggle style="flex:1;justify-content:center;">Cash</button>
+              <button class="filter-chip" data-toggle style="flex:1;justify-content:center;">InstaPay</button>
+              <button class="filter-chip" data-toggle style="flex:1;justify-content:center;">Card</button>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" style="width:100%;margin-top:16px;" data-toast="Sale completed — receipt printed (demo only)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg> Complete Sale — EGP 288.80
+          </button>
+          <button class="btn btn-outline" style="width:100%;margin-top:10px;">Hold Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-stack"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

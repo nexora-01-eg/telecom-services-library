@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تطبيق الطقس</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1>🌤️ تطبيق الطقس</h1>
+    <p class="hint">اكتب اسم مدينة أو دولة — البيانات حية من الإنترنت</p>
+
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="مثال: القاهرة، دبي، London، نيويورك">
+      <button class="btn" id="searchBtn">ابحث</button>
+    </div>
+
+    <p class="error" id="error"></p>
+
+    <div class="loading" id="loading">⏳ جاري جلب البيانات...</div>
+
+    <div class="weather" id="weather" hidden>
+      <h2 class="city" id="cityName">-</h2>
+      <p class="date" id="date">-</p>
+      <div class="current">
+        <p class="temp" id="temp">-</p>
+        <p class="desc" id="desc">-</p>
+        <p class="feels">حسّاً: <span id="feelsLike">-</span></p>
+      </div>
+      <div class="details">
+        <div class="detail">💨 الرياح: <span id="wind">-</span></div>
+        <div class="detail">💧 الرطوبة: <span id="humidity">-</span></div>
+        <div class="detail">🌬️ الضغط: <span id="pressure">-</span></div>
+        <div class="detail">☀️ شروق: <span id="sunrise">-</span></div>
+        <div class="detail">🌙 غروب: <span id="sunset">-</span></div>
+      </div>
+      <div class="forecast" id="forecast"></div>
+    </div>
+  </div>
+
+  <script src="weather.js"></script>
+</body>
+</html>

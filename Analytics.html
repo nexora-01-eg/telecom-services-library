@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analytics — Talabak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="page-loader"><div class="loader-ring"></div></div>
+<div class="sidebar-overlay"></div>
+
+<div class="app">
+  <aside class="sidebar">
+    <button class="sidebar-collapse-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <div class="sidebar-head">
+      <div class="sidebar-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+      <div class="sidebar-brand">Talabak<small>Order Hub</small></div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Sell</div>
+      <a href="Inbox.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg><span class="label">Inbox</span><span class="badge-count">12</span></a>
+      <a href="Orders.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 9.4L7.55 4.24"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg><span class="label">Orders</span><span class="badge-count">37</span></a>
+      <div class="sidebar-section-label">Store</div>
+      <a href="Products.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg><span class="label">Products</span></a>
+      <a href="Analytics.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span class="label">Analytics</span></a>
+    </nav>
+    <div class="sidebar-foot"><div class="sidebar-user"><img src="https://i.pravatar.cc/100?img=45" alt=""><div><strong>Nour El-Sayed</strong><span>Shop Owner</span></div></div></div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="mobile-menu-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+        <div class="topbar-title"><h1>Analytics</h1><span>Nour Accessories · Store performance</span></div>
+      </div>
+      <div class="topbar-right">
+        <button class="filter-chip" data-toggle>Last 30 Days <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <button class="btn btn-outline btn-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Export</button>
+      </div>
+    </header>
+
+    <div class="page">
+      <div class="kpi-grid" data-reveal>
+        <div class="kpi-card"><div class="kpi-top"><div class="kpi-icon" style="background:rgba(79,70,229,0.1);color:var(--primary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div class="kpi-trend up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg> 22.6%</div></div><div class="kpi-value" data-prefix="EGP " data-count="94200">EGP 0</div><div class="kpi-label">Monthly Revenue</div></div>
+        <div class="kpi-card"><div class="kpi-top"><div class="kpi-icon" style="background:rgba(219,39,119,0.1);color:var(--secondary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/></svg></div><div class="kpi-trend up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg> 14.1%</div></div><div class="kpi-value" data-count="192">0</div><div class="kpi-label">Orders This Month</div></div>
+        <div class="kpi-card"><div class="kpi-top"><div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M7.8 4.2A9 9 0 1 1 4.2 7.8"/></svg></div><div class="kpi-trend up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg> 3.4%</div></div><div class="kpi-value" data-count="37" data-suffix="%">0%</div><div class="kpi-label">Chat-to-Order Rate</div></div>
+        <div class="kpi-card"><div class="kpi-top"><div class="kpi-icon" style="background:var(--warning-bg);color:var(--warning);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/></svg></div><div class="kpi-trend down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg> 1.8%</div></div><div class="kpi-value" data-count="6" data-suffix="%">0%</div><div class="kpi-label">Return Rate</div></div>
+      </div>
+
+      <div class="grid-2col" style="margin-bottom:20px;">
+        <div class="panel" data-reveal>
+          <div class="panel-head"><div><h3>Orders by Channel</h3><p>Where customers find you</p></div></div>
+          <div class="bar-chart">
+            <div class="col"><div class="stack" style="height:78%;"><div class="seg" style="height:100%;background:#4F46E5;"></div></div><span>Instagram</span></div>
+            <div class="col"><div class="stack" style="height:96%;"><div class="seg" style="height:100%;background:#25D366;"></div></div><span>WhatsApp</span></div>
+            <div class="col"><div class="stack" style="height:52%;"><div class="seg" style="height:100%;background:#1877F2;"></div></div><span>Facebook</span></div>
+            <div class="col"><div class="stack" style="height:24%;"><div class="seg" style="height:100%;background:#DB2777;"></div></div><span>Direct</span></div>
+          </div>
+        </div>
+        <div class="panel" data-reveal data-reveal-delay="1">
+          <div class="panel-head"><div><h3>Shipping Partner Split</h3></div></div>
+          <div class="donut-wrap" style="justify-content:center;">
+            <svg viewBox="0 0 42 42" width="140" height="140">
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#F1EFFB" stroke-width="5"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#4F46E5" stroke-width="5" stroke-dasharray="46 54" stroke-dashoffset="25" stroke-linecap="round"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#DB2777" stroke-width="5" stroke-dasharray="32 68" stroke-dashoffset="-21" stroke-linecap="round"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#06B6D4" stroke-width="5" stroke-dasharray="22 78" stroke-dashoffset="-53" stroke-linecap="round"></circle>
+            </svg>
+          </div>
+          <ul class="donut-legend" style="margin-top:16px;">
+            <li><i style="background:#4F46E5;"></i> Bosta <b>46%</b></li>
+            <li><i style="background:#DB2777;"></i> Mylerz <b>32%</b></li>
+            <li><i style="background:#06B6D4;"></i> J&amp;T Express <b>22%</b></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel" data-reveal>
+        <div class="panel-head"><div><h3>Top Selling Products</h3><p>This month</p></div></div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Product</th><th>Units Sold</th><th>Revenue</th><th>Trend</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Beige Leather Tote</strong></td><td>64</td><td>EGP 56,960</td><td><span class="badge success">↑ 18%</span></td></tr>
+              <tr><td><strong>Gold Hoop Earrings</strong></td><td>112</td><td>EGP 24,640</td><td><span class="badge success">↑ 9%</span></td></tr>
+              <tr><td><strong>Silk Hair Scarf</strong></td><td>88</td><td>EGP 15,400</td><td><span class="badge success">↑ 26%</span></td></tr>
+              <tr><td><strong>Mini Crossbody Bag</strong></td><td>29</td><td>EGP 15,660</td><td><span class="badge danger">↓ 5%</span></td></tr>
+              <tr><td><strong>Pearl Necklace Set</strong></td><td>21</td><td>EGP 7,980</td><td><span class="badge success">↑ 4%</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-stack"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

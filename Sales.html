@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Reports — Rizq POS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div class="page-loader"><div class="loader-ring"></div></div>
+<div class="sidebar-overlay"></div>
+
+<div class="app">
+  <aside class="sidebar">
+    <button class="sidebar-collapse-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+    <div class="sidebar-head">
+      <div class="sidebar-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg></div>
+      <div class="sidebar-brand">Rizq<small>Smart POS</small></div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="sidebar-section-label">Sell</div>
+      <a href="POS.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg><span class="label">Register</span></a>
+      <div class="sidebar-section-label">Manage</div>
+      <a href="Inventory.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8V21H3V8"/><path d="M1 3h22v5H1z"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span class="label">Inventory</span><span class="badge-count">312</span></a>
+      <a href="Sales.html" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><span class="label">Sales Reports</span></a>
+      <div class="sidebar-section-label">System</div>
+      <a href="Settings.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><span class="label">Settings</span></a>
+    </nav>
+    <div class="sidebar-foot"><div class="sidebar-user"><img src="https://i.pravatar.cc/100?img=51" alt=""><div><strong>Mahmoud Adel</strong><span>Store Owner</span></div></div></div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button class="mobile-menu-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+        <div class="topbar-title"><h1>Sales Reports</h1><span>Al-Rehab Pharmacy · Performance overview</span></div>
+      </div>
+      <div class="topbar-right">
+        <button class="filter-chip" data-toggle>This Week <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <button class="btn btn-outline btn-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Export</button>
+      </div>
+    </header>
+
+    <div class="page">
+      <div class="kpi-grid" data-reveal>
+        <div class="kpi-card"><div class="kpi-top"><div class="kpi-icon" style="background:rgba(124,58,237,0.1);color:var(--primary);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><div class="kpi-trend up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg> 9.8%</div></div><div class="kpi-value" data-prefix="EGP " data-count="42680">EGP 0</div><div class="kpi-label">Today's Sales</div></div>
+        <div class="kpi-card"><div class="kpi-top"><div class="kpi-icon" style="background:var(--warning-bg);color:var(--warning);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></div><div class="kpi-trend up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg> 4.2%</div></div><div class="kpi-value" data-count="186">0</div><div class="kpi-label">Transactions</div></div>
+        <div class="kpi-card"><div class="kpi-top"><div class="kpi-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M7.8 4.2A9 9 0 1 1 4.2 7.8"/></svg></div><div class="kpi-trend up"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="18 15 12 9 6 15"/></svg> 2.1%</div></div><div class="kpi-value" data-prefix="EGP " data-count="229">EGP 0</div><div class="kpi-label">Avg. Basket Size</div></div>
+        <div class="kpi-card"><div class="kpi-top"><div class="kpi-icon" style="background:var(--danger-bg);color:var(--danger);"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/></svg></div><div class="kpi-trend down"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"/></svg> 1.4%</div></div><div class="kpi-value" data-count="6">0</div><div class="kpi-label">Refunds</div></div>
+      </div>
+
+      <div class="grid-2col" style="margin-bottom:20px;">
+        <div class="panel" data-reveal>
+          <div class="panel-head"><div><h3>Sales This Week</h3><p>Cash vs. digital payments</p></div></div>
+          <div class="bar-chart">
+            <div class="col"><div class="stack" style="height:64%;"><div class="seg" style="height:55%;background:#7C3AED;"></div><div class="seg" style="height:45%;background:#D97706;animation-delay:.05s;"></div></div><span>Sat</span></div>
+            <div class="col"><div class="stack" style="height:78%;"><div class="seg" style="height:60%;background:#7C3AED;"></div><div class="seg" style="height:40%;background:#D97706;animation-delay:.1s;"></div></div><span>Sun</span></div>
+            <div class="col"><div class="stack" style="height:52%;"><div class="seg" style="height:50%;background:#7C3AED;"></div><div class="seg" style="height:50%;background:#D97706;animation-delay:.15s;"></div></div><span>Mon</span></div>
+            <div class="col"><div class="stack" style="height:88%;"><div class="seg" style="height:65%;background:#7C3AED;"></div><div class="seg" style="height:35%;background:#D97706;animation-delay:.2s;"></div></div><span>Tue</span></div>
+            <div class="col"><div class="stack" style="height:70%;"><div class="seg" style="height:58%;background:#7C3AED;"></div><div class="seg" style="height:42%;background:#D97706;animation-delay:.25s;"></div></div><span>Wed</span></div>
+            <div class="col"><div class="stack" style="height:96%;"><div class="seg" style="height:70%;background:#7C3AED;"></div><div class="seg" style="height:30%;background:#D97706;animation-delay:.3s;"></div></div><span>Thu</span></div>
+            <div class="col"><div class="stack" style="height:100%;"><div class="seg" style="height:62%;background:#7C3AED;"></div><div class="seg" style="height:38%;background:#D97706;animation-delay:.35s;"></div></div><span>Fri</span></div>
+          </div>
+          <div class="chart-legend"><span><i style="background:#7C3AED;"></i> Cash</span><span><i style="background:#D97706;"></i> InstaPay / Card</span></div>
+        </div>
+
+        <div class="panel" data-reveal data-reveal-delay="1">
+          <div class="panel-head"><div><h3>Sales by Category</h3></div></div>
+          <div class="donut-wrap">
+            <svg viewBox="0 0 42 42" width="140" height="140">
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#F3EFF9" stroke-width="5"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#7C3AED" stroke-width="5" stroke-dasharray="36 64" stroke-dashoffset="25" stroke-linecap="round"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#D97706" stroke-width="5" stroke-dasharray="24 76" stroke-dashoffset="-11" stroke-linecap="round"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#C026D3" stroke-width="5" stroke-dasharray="22 78" stroke-dashoffset="-35" stroke-linecap="round"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#16A34A" stroke-width="5" stroke-dasharray="18 82" stroke-dashoffset="-57" stroke-linecap="round"></circle>
+            </svg>
+            <ul class="donut-legend">
+              <li><i style="background:#7C3AED;"></i> Medicines <b>36%</b></li>
+              <li><i style="background:#D97706;"></i> Baby Care <b>24%</b></li>
+              <li><i style="background:#C026D3;"></i> Skincare <b>22%</b></li>
+              <li><i style="background:#16A34A;"></i> Vitamins <b>18%</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" data-reveal>
+        <div class="panel-head"><div><h3>Top Selling Products</h3><p>This week</p></div></div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Product</th><th>Units Sold</th><th>Revenue</th><th>Trend</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Panadol Extra 24s</strong></td><td>412</td><td>EGP 13,184</td><td><span class="badge success">↑ 12%</span></td></tr>
+              <tr><td><strong>Pampers Newborn</strong></td><td>96</td><td>EGP 20,160</td><td><span class="badge success">↑ 8%</span></td></tr>
+              <tr><td><strong>Vitamin C 1000mg</strong></td><td>288</td><td>EGP 27,360</td><td><span class="badge success">↑ 21%</span></td></tr>
+              <tr><td><strong>Nivea Body Lotion</strong></td><td>144</td><td>EGP 20,880</td><td><span class="badge danger">↓ 4%</span></td></tr>
+              <tr><td><strong>Augmentin 1g</strong></td><td>77</td><td>EGP 9,086</td><td><span class="badge success">↑ 3%</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-stack"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
